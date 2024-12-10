@@ -35,7 +35,8 @@ Open a Colab notebook and install the following dependencies in this way:
 Instead of the huggingface directory installed here, feel free to change this to the right dataset that you then unzip and pass to the train.py function
 
 ## Running the Model
-- Refer to the modified train.py file that has been uploaded to this repo so that you can plot graphs of L1 loss, EMA Loss for Log, PSNR, SSIM, and LPIPS over the 30,000 iterations that this model runs for
+- Refer to the modified train.py and metric.py file that has been uploaded to this repo so that you can plot graphs of L1 loss, EMA Loss for Log, PSNR, SSIM, and LPIPS over the 30,000 iterations that this model runs for
+- You will need to replace the existing train.py and metric.py files in the Colab directory generated from the above code in the correct folders with the modified files in this repo so that the right plots can be produced
 - You can then use the following commands to train, render, and get metrics for the model on your COLMAP or synthetic dataset. These instructions are all included in the original repo.
 
       python train.py -s <path to COLMAP or NeRF Synthetic dataset> --eval # Train with train/test split
